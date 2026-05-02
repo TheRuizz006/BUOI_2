@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dữ liệu nhân viên</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-secondary" href="#">Kiu En Ti Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Bã Mía
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Loại 1</a></li>
+              <li><a class="dropdown-item" href="#">Loại 2</a></li>
+
+              <li><a class="dropdown-item" href="#">Cao Cấp</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Khô Gà
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Đè tem</a></li>
+              <li><a class="dropdown-item" href="#">Dán nhãn</a></li>
+
+              <li><a class="dropdown-item" href="#">Hàng nhập</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-info" aria-current="page" href="#">Rap Nịnh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-muted" aria-current="page" href="#">Nhận khô gà miễn phí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">Gọi cho Vũ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Tìm CHỘ nào? </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <div class="card mt-3">
+          <div class="card-header">
+            Danh Sách Nhân Viên
+          </div>
+          <div class="card-body">
+            <table class="table table-bordered  mt-3">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Họ Lót</th>
+                  <th>Tên</th>
+                  <th>SDT</th>
+                  <th>Ghi CHú</th>
+                  <th>Nghề nghiệp</th>
+                  <th>Trạng thái</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Nguyễn Quốc</td>
+                  <td>Long</td>
+                  <td>0123456789</td>
+                  <td>Có vợ</td>
+                  <td>Giáo viên</td>
+                  <td><button class="btn btn-warning">None</button></td>
+                  <td><button class="btn btn-primary">Cập nhật</button> <button class="btn btn-danger">Xóa </button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Trần Thị</td>
+                  <td>Lan</td>
+                  <td>0987654321</td>
+                  <td>Không</td>
+                  <td>Lái Xe</td>
+                  <td><button class="btn btn-warning">None</button></td>
+                  <td><button class="btn btn-primary">Cập nhật</button> <button class="btn btn-danger">Xóa </button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lê Văn</td>
+                  <td>An</td>
+                  <td>0123987654</td>
+                  <td>Không</td>
+                  <td>Thợ sửa máy</td>
+                  <td><button class="btn btn-success">Active</button></td>
+                  <td><button class="btn btn-primary">Cập nhật</button> <button class="btn btn-danger">Xóa </button></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th class="text-center" colspan="2">Tổng cộng:</th>
+                  <td class="text-center" colspan="6">3 nhân viên</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <div class="card mt-3">
+          <div class="card-header">
+            Thêm nhân viên
+          </div>
+          <div class="card-body">
+            <label><b>Họ tên</b></label>
+            <input placeholder="nhập họ tên đê" type="text" class="form-control mt -2">
+            <label class="mt-2"><b>Ngày sinh</b></label>
+            <input type="date" class="form-control mt -2">
+            <label class="mt-2"><b>SDT</b></label>
+            <input type="text" class="form-control mt -2">
+            <label class="mt-2"><b>Email</b></label>
+
+            <input type="email" class="form-control mt -2">
+
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Gửi
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hoàn thành</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Siuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Lưu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <p class="text-center mt-3">Copyright © 2024 Kiu En Ti Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dữ liệu khách hàng</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-secondary" href="#">Kiu En Ti Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Bã Mía
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Loại 1</a></li>
+              <li><a class="dropdown-item" href="#">Loại 2</a></li>
+
+              <li><a class="dropdown-item" href="#">Cao Cấp</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Khô Gà
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Đè tem</a></li>
+              <li><a class="dropdown-item" href="#">Dán nhãn</a></li>
+
+              <li><a class="dropdown-item" href="#">Hàng nhập</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-info" aria-current="page" href="#">Rap Nịnh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-muted" aria-current="page" href="#">Nhận khô gà miễn phí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">Gọi cho Vũ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success text-nowrap" type="submit">Tìm CHỘ nào? </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="card">
+        <div class="card-body d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="mb-1 fw-bold">
+              <i class="fa-solid fa-users text-primary me-2"></i>
+              Danh sách khách hàng
+            </h4>
+            <p class="text-secondary mb-0">
+              Quản lý và theo dõi thông tin khách hàng trong hệ thống
+            </p>
+          </div>
+          <button class="btn btn-primary text-nowrap">
+            <i class="fa-solid fa-plus me-1"></i>
+            Thêm khách hàng
+          </button>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-12 col-md-12">
+          <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+              <h5>Danh sách Khách hàng</h5>
+            </div>
+            <div class="card-body">
+              <div class="col-lg-12 d-flex align-items-center gap-2 mb-3">
+                <input type="text" class="form-control" placeholder="Tìm kiếm khách hàng">
+                <button class="btn btn-primary text-nowrap">Tìm kiếm</button>
+                <button class="btn btn-secondary text-nowrap">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+              </div>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="text-center">STT</th>
+                    <th class="text-center">Mã KH</th>
+                    <th class="text-center">Tên Khách hàng</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Nhóm KH</th>
+                    <th class="text-center">Ngày tham gia</th>
+                    <th class="text-center">Khu vực</th>
+                    <th class="text-center">Chi tiết</th>
+                    <th class="text-center">Tình trạng</th>
+                    <th class="text-center">Hành động</th>
+
+                  </tr>
+                </thead>
+                <tbody class="table-light">
+                  <tr>
+                    <td>1</td>
+                    <td>Kh001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>nguyenvana@example.com</td>
+                    <td>Thành viên</td>
+                    <td>01/07/2025</td>
+                    <td>Hà Nội</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-success w-100">Đang hoạt động</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>KH002</td>
+                    <td class="text-nowrap">Trần Thị Bình</td>
+                    <td>tranthibinh@example.com</td>
+                    <td>VIP</td>
+                    <td>02/07/2025</td>
+                    <td>Hồ Chí Minh</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-warning text-dark text-nowrap">Tạm dừng</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td>KH003</td>
+                    <td class="text-nowrap">Lê Văn Cường</td>
+                    <td>levancuong@example.com</td>
+                    <td>Mới</td>
+                    <td>03/07/2025</td>
+                    <td>Đà Nẵng</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-success text-nowrap">Đang hoạt động</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td>KH004</td>
+                    <td class="text-nowrap">Phạm Thị Duyên</td>
+                    <td>phamthiduyen@example.com</td>
+                    <td>Thân thiết</td>
+                    <td>04/07/2025</td>
+                    <td>Cần Thơ</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-success text-nowrap">Đang hoạt động</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>5</td>
+                    <td>KH005</td>
+                    <td class="text-nowrap">Hoàng Văn Đạt</td>
+                    <td>hoangvandat@example.com</td>
+                    <td>VIP</td>
+                    <td>05/07/2025</td>
+                    <td>Hải Phòng</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-warning text-dark text-nowrap">Tạm dừng</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>6</td>
+                    <td>KH006</td>
+                    <td class="text-nowrap">Ngô Thị Giang</td>
+                    <td>ngothigiang@example.com</td>
+                    <td>Thành viên</td>
+                    <td>06/07/2025</td>
+                    <td>Bình Dương</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-success text-nowrap">Đang hoạt động</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>7</td>
+                    <td>KH007</td>
+                    <td class="text-nowrap">Đỗ Minh Hằng</td>
+                    <td>dominhhang@example.com</td>
+                    <td>Mới</td>
+                    <td>07/07/2025</td>
+                    <td>Nghệ An</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-warning text-dark text-nowrap">Tạm dừng</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>8</td>
+                    <td>KH008</td>
+                    <td class="text-nowrap">Vũ Thu Hà</td>
+                    <td>vuthuha@example.com</td>
+                    <td>Thân thiết</td>
+                    <td>08/07/2025</td>
+                    <td>Nha Trang</td>
+                    <td class="align-middle text-center"><i class="fa-solid fa-circle-exclamation text-info"></i></td>
+                    <td><span class="badge text-bg-warning text-dark text-nowrap">Tạm dừng</span></td>
+                    <td class="text-nowrap">
+                      <button class="btn btn-primary text-nowrap">Cập nhật</button>
+                      <button class="btn btn-danger text-nowrap">Xóa</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>
